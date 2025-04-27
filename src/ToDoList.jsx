@@ -3,12 +3,6 @@ import './App.css';
 
 function ToDoList() {
   const [tasks, setTasks] = useState([])
-    /*const savedTasks = localStorage.getItem('tasks');
-    return savedTasks ? JSON.parse(savedTasks) : [];*/
-  
-  /*useEffect(() => {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-  }, [tasks]);  */
   
   const [newTask, setNewTask] = useState('');
 
@@ -21,17 +15,17 @@ function ToDoList() {
       .then(response => response.json())
       .then(data => {
         const updatedTasks = data.map(task => {
-          // Ако задачата е завършена, добави дата на изпълнение
           if (task.completed) {
-            return { ...task, completedAt: new Date().toLocaleString() }; // Добавяме текущата дата
+            return { ...task, completedAt: new Date().toLocaleString() }; 
           }
-          return task; // Ако не е завършена, оставяме без промяна
+          return task; 
         });
-        setTasks(updatedTasks); // Записваме актуализираните задачи в състоянието
+        setTasks(updatedTasks); 
       })
       .catch(error => console.error('Error fetching todos:', error));
-  }, []); // Този useEffect ще се извика само веднъж, когато компонентът се зареди
-  
+  }, []); 
+
+
   const getSortedCompletedTasks = (tasks)=>{
     if (completedSort === "completedDateNewest"){
       return [...tasks].sort((a, b) => new Date(b.completedAt) - new Date(a.completedAt));
