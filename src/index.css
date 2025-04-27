@@ -1,0 +1,151 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-section input {
+  width: 300px; 
+  padding: 10px;
+  margin: 0; 
+}
+
+.input-section button {
+  padding: 10px 20px; 
+  background-color: #f37db4;
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.task-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.task-list-pending {
+  flex-grow: 1;
+  background: rgb(253, 173, 226);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.task-list.completed {
+  flex-grow: 1; 
+  background: rgb(172, 159, 245);
+  padding: 10px;
+  border-radius: 10px;}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #851149;
+    cursor: pointer;
+  
+}
+
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+
+.task-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  display: flex;
+  gap: 8px; 
+  background-color: hsl(140, 83%, 39%);
+  color: #f8f8f8;
+  border: none;
+  border-radius: 5px;
+}
+
+.undo-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  display: inline-block;
+  background-color: hsl(27, 88%, 52%);
+  color: #f8f8f8;
+  border: none;
+  border-radius: 5px;
+}
+
+.delete-button{
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  display: inline-block;
+  background-color: hsl(0, 71%, 49%);
+  color: #f8f8f8;
+  border: none;
+  border-radius: 5px;
+}
+
+.moveUp-button{
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  display: inline-block;
+  background-color: hsl(243, 94%, 62%);
+  color: #f8f8f8;
+  border: none;
+  border-radius: 5px;
+}
+
+.completed-date {
+  font-size: 0.8em;
+  color: rgb(88, 50, 192);
+  margin-top: 4px;
+}
+
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2px;
+}
+
+.filter-item, .filter-item-right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px; 
+}
+
+.filter-item-right {
+  margin-left: auto; 
+}
+
+.filter-item label,
+.filter-item-right label {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.filter-item select,
+.filter-item-right select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
