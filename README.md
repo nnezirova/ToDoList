@@ -35,6 +35,7 @@ Before running the app locally, make sure you have the following installed on yo
 1. Clone the repository:
 
 git clone https://github.com/nnezirova/ToDoList.git
+
 cd my-react-app
 
 2. Install dependencies:
